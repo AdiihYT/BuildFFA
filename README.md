@@ -12,9 +12,10 @@ Implements a BuildFFA/KnockbackFFA gamemode.
 - Heal-on-kill
 - Instant void kill at certain Y pos
 - Kill commands
-- **Special items:**
-- > Trampoline - boosts you up 20-30 blocks on right click
-- > Soon more to be implemented...
+
+**Special items:**
+- Trampoline - boosts you up 20-30 blocks on right click
+- Soon more to be implemented...
 
 ## TO-DO features
 - Implement bonuses (current ideas: ENDER_PEARL_SAVER, STRENGTH, POISON_HIT, SPEED)
