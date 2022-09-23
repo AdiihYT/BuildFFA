@@ -1,0 +1,67 @@
+general:
+  bonusDuration: 600
+  mapCycleDuration: 600
+  defaultGameRules:
+    - 'announceAdvancements:false'
+    - 'showDeathMessages:false'
+    - 'doInsomnia:false'
+    - 'doDaylightCycle:false'
+    - 'doWeatherCycle:false'
+    - 'doMobSpawning:false'
+    - 'doTraderSpawning:false'
+    - 'fallDamage:false'
+    - 'mobGriefing:false'
+    - 'doImmediateRespawn:true'
+    - 'disableRaids:true'
+    - 'keepInventory:true' # to prevent drops
+bossbar:
+  enabled: true
+  text: '%map% &7(%expiry%)'
+  color: 'YELLOW'
+  style: 'SOLID'
+killCommands:
+  - 'say %attacker% killed %victim%'
+items:
+  trampoline:
+    material: 'light_weighted_pressure_plate'
+    displayName: '&6Trambulin'
+    lore:
+    - '&fFeldob magasra: &7Jobb klikk'
+messages:
+  prefix: '&7[&eBFFA&7]'
+  reload: '%prefix% &aKonfigurációs fájlok sikeresen újratöltve!'
+  getItem: '%prefix% &aSikeresen lekértél %amount%x &2%item% &atárgyat &2%player% &ajátékosnak.'
+  bonusActivated: '%prefix% &2%bonus% &abónusz aktiválva &2%seconds% &amásodpercre &2%activator% &aáltal.'
+  bonusReset: '%prefix% &eÖsszes aktív bónusz sikeresen törölve.'
+  noSuchPlayer: '%prefix% &cNem találom a megadott játékost.'
+  noSuchItem: '%prefix% &cNem találom a megadott tárgyat.'
+  mapChangeIncoming:
+    seconds: '%prefix% &ePályaváltás következik &6%seconds% másodperc &emúlva.'
+    minutes: '%prefix% &ePályaváltás következik &6%minutes% perc &emúlva.'
+  mapChanged: '%prefix% &fPályaváltás megtörtént a(z) %map% &fpályára.'
+  setup:
+    noSuchMap: '%prefix% &cA megadott névvel nem létezik pálya.'
+    alreadyExisting: '%prefix% &cA megadott világ már létezik pályaként.'
+    createError: '%prefix% &cA megadott világ nem létezik vagy nincs betöltve.'
+    createSuccess: '%prefix% &aSikeresen létrehoztál egy új pályát a(z) &2%world% &avilágból.'
+    displayNameSet: '%prefix% &2%map% &apálya neve mostantól: &r%displayName%'
+    spawnSet: '%prefix% &aA(z) &2%map% &apálya kezdőhelye sikeresen lehelyezve.'
+    voidKillHeightSet: '%prefix% &aMostantól &2%y% &aY-koordinátától döglik a légy.'
+    voidKillHeightError: '%prefix% &cA megadott érték érvénytelen.'
+    deleted: '%prefix% &2%map% &apálya véglegesen törölve.'
+    deleteError: '%prefix% &cA pálya jelenleg használatban van, így a törlése sikertelen volt.'
+    defaultKitSaved: '%prefix% &aKezdőfelszerelés sikeresen elmentve.'
+  helpMenu:
+    - '&e/%command% give <player> <item> <amount> &fSpeciális tárgy lekérése'
+    - '&e/%command% reload &fFájlok újratöltése'
+    - '&e/%command% skipmap &fUgrás a következő pályára (random)'
+    - '&e/%command% setmap <map> &fPálya átváltása'
+    - '&e/%command% activatebonus <bonus_id> <activator_player> &fBónusz aktiválása'
+    - '&e/%command% resetbonuses &fÖsszes bónusz törlése'
+  setupHelp:
+    - '&e/%command% setup create <world> &fÚj pálya létrehozása'
+    - '&e/%command% setup delete <map> &fPálya törlése'
+    - '&e/%command% setup setdisplayname <map> <displayname> &fMegjelenítési név beállítása'
+    - '&e/%command% setup setspawn <map> &fKezdőhely lehelyezése'
+    - '&e/%command% setup setvoidkillheight <map> <y> &fVoid-magasság beállítása'
+    - '&e/%command% setup savedefaultkit &fKezdőfelszerelés beállítása'

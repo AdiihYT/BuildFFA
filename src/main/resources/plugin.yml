@@ -1,0 +1,14 @@
+name: BuildFFA
+main: eu.adiih.buildffa.FFAPlugin
+version: 220923-b8
+api-version: 1.13
+softdepend: [PlaceholderAPI]
+description: Implements a BuildFFA/KnockbackFFA gamemode
+author: AdiihYT
+website: adiih.eu
+commands:
+  buildffa:
+    aliases: [bffa]
+    permission: buildffa.admin
+  spawn:
+    permission: buildffa.admin
